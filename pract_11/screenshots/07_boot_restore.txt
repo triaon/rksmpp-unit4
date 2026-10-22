@@ -1,0 +1,9 @@
+$ adb reboot
+$ adb shell getprop sys.boot_completed
+1
+$ adb shell date
+Thu Oct 22 04:04:44 MSK 2026
+$ adb shell dumpsys alarm | grep -A2 "barnatovich.flowers}"
+    RTC_WAKEUP #22: Alarm{4fe7220 type 0 origWhen 1792688400000 whenElapsed 57354557 ru.mirea.barnatovich.flowers}
+      tag=*walarm*:ru.mirea.barnatovich.flowers.REMIND
+      type=RTC_WAKEUP origWhen=2026-10-22 20:00:00.000 window=0 exactAllowReason=permission repeatInterval=0 count=0 flags=0x5
